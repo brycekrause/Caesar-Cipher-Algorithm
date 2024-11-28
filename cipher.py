@@ -1,5 +1,6 @@
 import random
 import math
+import os
 
 # TODO: take input from keyboard
         # save text to file
@@ -31,6 +32,11 @@ def decrypt(text, shift):
 
 encrypted_text = encrypt(message, shift)
 decrypted_text = decrypt(encrypted_text, shift)
+
+enc_file = open('encrypted.txt', 'w')
+enc_file.write(encrypted_text)
+enc_file.close
+
 
 print(encrypted_text)
 print(decrypted_text)
