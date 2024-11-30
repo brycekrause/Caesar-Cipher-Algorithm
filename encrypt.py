@@ -1,4 +1,4 @@
-message = 'hello world'
+message = input("Enter the message to encrypt: ")
 shift = 3
 
 
