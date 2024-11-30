@@ -3,9 +3,7 @@ import math
 import os
 
 # TODO: take input from keyboard
-        # save text to file
-        # save encrypted text to file
-message = "Hello World!"
+message = "Hellol World"
 shift = 3
 
 
@@ -22,21 +20,16 @@ def encrypt(text, shift):
             # chr() returns the character
         elif char.islower():
             result += chr((ord(char) + shift - 97) % 26 + 97)
+            # same but in range of lowercase
         else:
             result += char
 
     return result
 
-def decrypt(text, shift):
-    return encrypt(text, -shift)
-
 encrypted_text = encrypt(message, shift)
-decrypted_text = decrypt(encrypted_text, shift)
 
-enc_file = open('encrypted.txt', 'w')
-enc_file.write(encrypted_text)
+with open('encrypted.txt', 'a') as enc_file:
+    enc_file.write(encrypted_text + '\n')
 enc_file.close
 
-
-print(encrypted_text)
-print(decrypted_text)
+print(f"{encrypted_text}\nSaved to encrypted.txt")
