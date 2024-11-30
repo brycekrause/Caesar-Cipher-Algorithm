@@ -1,11 +1,4 @@
-import random
-import math
-import os
-
-# TODO: take input from keyboard
-message = "Hello World!"
 shift = 3
-
 
 def decrypt(text, shift):
     result = ""

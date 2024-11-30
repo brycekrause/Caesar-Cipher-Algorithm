@@ -1,9 +1,4 @@
-import random
-import math
-import os
-
-# TODO: take input from keyboard
-message = "Hellol World"
+message = 'hello world'
 shift = 3
 
 
