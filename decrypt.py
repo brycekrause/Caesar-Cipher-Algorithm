@@ -1,4 +1,4 @@
-shift = 3
+shift = 10
 
 def decrypt(text, shift):
     result = ""

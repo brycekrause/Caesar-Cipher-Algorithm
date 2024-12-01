@@ -1,5 +1,5 @@
-message = input("Enter the message to encrypt: ")
-shift = 3
+message = input("Enter the message to encrypt:\n")
+shift = 10
 
 
 def encrypt(text, shift):
